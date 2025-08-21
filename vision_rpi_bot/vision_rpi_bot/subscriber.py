@@ -13,7 +13,7 @@ class MinimalSubscriber(Node):
             'pub_topic',
             self.listener_callback,
             10)
-        self.subscription  # prevent unused variable warning
+        self.subscription  # prevent unused variable warning!
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%d"' % msg.data)
